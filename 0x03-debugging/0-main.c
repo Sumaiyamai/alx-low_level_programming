@@ -1,17 +1,26 @@
-#include "main.h"
+#include <main.h>
+#include <time.h>
 #include <stdio.h>
 
 /**
- * main - check positive or negative function.
+ * main - Prints a random number and states whether
+ *        it is positive, negative, or zero.
  *
  * Return: Always 0.
- */
+*/
 int main(void)
 {
-	int i;
+	int n;
 
+	srand(time(0));
 
-	i = '0';
-	printf("%i: %d\n", i, positive_or_negative(i));
+	n = (positive_or_negative(rand());
+	if (n > 0)
+		printf("%d is positive\n", n);
+	else if (n < 0)
+		printf("%d is negative\n", n);
+	else
+		printf("%d is zero\n", n);
+
 	return (0);
 }
