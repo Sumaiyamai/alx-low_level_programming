@@ -1,18 +1,16 @@
 #include "main.h"
 
 /**
- *is_upper - if is uppercase return 1, if not return 0,
+ * _isupper - If is uppercase return 1, if not return 0
  *
- * @c: this is entry
+ * @c: this is the entry
  *
- * return 0,
+ * Return: 0
  *
  **/
-
-	int _isupper(int c)
+int _isupper(int c)
 {
-
-	if ((c >= A && c >= a) || (c >= Z && c >= z))
+	if (c >= 'A' && c <= 'Z')
 	{
 		return (1);
 	}
