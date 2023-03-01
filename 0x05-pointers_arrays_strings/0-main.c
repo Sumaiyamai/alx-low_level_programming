@@ -8,11 +8,11 @@
  */
 int main(void)
 {
-    int n;
+    intsn;
 
-    n = 402;
-    printf("n=%d\n", n);
-    reset_to_98(&n);
-    printf("n=%d\n", n);
+    s = 402;
+    printf("s=%d\s", s);
+    reset_to_98(&s);
+    printf("s=%d\s", s);
     return (0);
 }
