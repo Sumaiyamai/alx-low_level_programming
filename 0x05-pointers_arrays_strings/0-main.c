@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-    intsn;
+    int s;
 
     s = 402;
     printf("s=%d\s", s);
