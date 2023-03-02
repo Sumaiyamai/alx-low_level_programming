@@ -7,7 +7,7 @@
  *  @dest: is the output
  *  @src: is the input src
  *  @n: number of bytes from source
- *  Return: return pointer to the resulting string dest
+ *  Return: Always 0
  *
  */
 char *_strncat(char *dest, char *src, int n);
@@ -16,13 +16,14 @@ char *_strncat(char *dest, char *src, int n);
 	int index, count;
 
 	for (index = 0; dest[index] != '\0'; index++)
+		;
 	for (count = 0; count < n && src[count] != '\0'; count++)
 	{
 		dest[index] = src[count];
-		index++;
+		ndex++;
 	}
 	if (count < n)
-	{
+
 	dest[index] = '\0';
 	}
 	return (dest);
