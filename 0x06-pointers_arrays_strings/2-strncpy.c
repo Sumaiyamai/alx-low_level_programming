@@ -7,6 +7,7 @@
  * @src: is the input
  * @n: number of bytes to copy
  *
+ * Return: return the copied strings with the number of bytes
  */
 
 char *_strncpy(char *dest, char *src, int n)
