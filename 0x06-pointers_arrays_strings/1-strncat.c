@@ -7,7 +7,7 @@
  *  @dest: is the output
  *  @src: is the input src
  *  @n: number of bytes from source
- *  Return: return dest
+ *  Return: return pointer to the resulting string dest
  *
  */
 char *_strncat(char *dest, char *src, int n);
