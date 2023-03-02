@@ -7,7 +7,6 @@
  *  @dest: is the output
  *  @src: is the input src
  *  @n: number of bytes from source
- *
  *  Return: return dest
  *
  */
