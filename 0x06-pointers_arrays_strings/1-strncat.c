@@ -12,7 +12,7 @@
  */
 char *_strncat(char *dest, char *src, int n);
 {
-	{
+
 	int index, count;
 
 	for (index = 0; dest[index] != '\0'; index++)
@@ -23,7 +23,7 @@ char *_strncat(char *dest, char *src, int n);
 		ndex++;
 	}
 	if (count < n)
-
+	{
 	dest[index] = '\0';
 	}
 	return (dest);
