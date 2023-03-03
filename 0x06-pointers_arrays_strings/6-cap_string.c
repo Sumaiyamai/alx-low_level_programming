@@ -19,7 +19,7 @@ char *string_toupper(char *str)
 			str[i] = (int)str[i] -  32;
 			beginning_of_word = 0;
 		}
-		if (str[i] == ' ')
+		if ((int) str[i] == 32)
 		{
 			beginning_of_word = 1;
 		}
