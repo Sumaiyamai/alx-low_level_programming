@@ -8,7 +8,7 @@
  *
  *Return: always retuurn 0.
  */
-char *cap_string(char *str);
+char *cap_string(char *str)
 {
 	int i;
 	int beginning_of_word = 1;
