@@ -1,13 +1,14 @@
 #include "main.h"
 
 /**
- * string_toupper - This function will replace all lowercase lett
- * @str: The string that will be checked for lowercase letters
+ * cap_string - capitalizes every first letter of a word in a string.
+ * separators of words are:  space, tabulation,
+ * new line, ,, ;, ., !, ?, (, ), {, and }.
+ * @str: pointer to string.
  *
- * Return: The resulting string str, where all the letters are uppercase
+ *Return: always retuurn 0.
  */
-
-char *string_toupper(char *str)
+char *cap_string(char *str);
 {
 	int i;
 	int beginning_of_word = 1;
@@ -19,7 +20,11 @@ char *string_toupper(char *str)
 			str[i] = (int)str[i] -  32;
 			beginning_of_word = 0;
 		}
-		if ((int) str[i] == 32)
+		if (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' ||
+			str[i] == ',' str[i] == ';' || str[i] == '.' ||
+			str[i] == '!' || str[i] == '?' || str[i] == '"' ||
+			str[i] == '(' || str[i] == ')' || str[i] == '{'
+			|| str[i] == '}')
 		{
 			beginning_of_word = 1;
 		}
