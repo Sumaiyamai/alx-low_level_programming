@@ -17,7 +17,7 @@ char *cap_string(char *str);
 	{
 		if (str[i] >= 'a' && str[i] <= 'z' && beginning_of_word == 1)
 		{
-			str[i] = (int)str[i] -  32;
+			str[i] = str[i] -  32;
 			beginning_of_word = 0;
 		}
 		if (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' ||
