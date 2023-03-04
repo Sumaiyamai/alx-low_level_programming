@@ -28,6 +28,10 @@ char *cap_string(char *str)
 		{
 			beginning_of_word = 1;
 		}
+		else
+		{	beginning_of_word = 0;
+		}
+
 	}
 	return (str);
 }
